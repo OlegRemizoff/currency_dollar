@@ -33,3 +33,6 @@
 
 ## Пример для branch one
 <img src="one.gif">
+
+## Пример для branch two
+<img src="two.gif">

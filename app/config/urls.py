@@ -17,11 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from .router import get_current_usd
+from .router import get
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('get-current-usd/', get_current_usd, name='home')
+    path('get-current-usd/', get, name='home')
 
 ]
 
