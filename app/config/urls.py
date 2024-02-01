@@ -21,7 +21,8 @@ from .router import get_current_usd
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('get-current-usd/', get_current_usd, name='home')
+    # path('get-current-usd/', get_current_usd, name='home')
+    path('', get_current_usd, name='home')
 
 ]
 
