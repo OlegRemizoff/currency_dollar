@@ -11,27 +11,30 @@
 
 
 </details>
-P.S вместо 10 секунд - 2 секунды (для наглядности)
+
 
 ## Установка
+### 0) Запустить redis | выполнить команду в терминале (Linux)
+    redis-server 
 
-### 1) Создать виртуальное окружение
+### 1) Создать виртуальное окружение 
 
 ### 2) Установить зависимости
 
     pip install -r requirements.txt
 
-### 3) Выполнить миграции
+### 3) Из директории (app), где расположен файл manage.py, выполните команду
 
-    python manage.py migrate    
+    make migrate && make run  
 
-### 4) Запустить сервер
-
-    python manage.py runserver
+### 4) В новом окне терминала запустить celery
+    make celery
 
 ### 5) Перейти по адресу
     http://127.0.0.1:8000/get-current-usd/
 
+## Пример для branch three
+<img src="three.gif">
 
 ## Пример для branch one
 <img src="one.gif">
